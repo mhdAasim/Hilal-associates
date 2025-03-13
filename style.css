@@ -157,7 +157,7 @@ html {
 }
 
 .service-intro {
-    font-size: 1.2em;
+    font-size: 16px;
     color: #555;
     margin-bottom: 20px;
 }
@@ -171,7 +171,6 @@ html {
 
 .service-card {
     background: linear-gradient(135deg, #20B2AA, #115483);
-    /* background: linear-gradient(135deg, #a2c3cc, #456d79); */
     color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -181,11 +180,13 @@ html {
 
 .service-card:hover {
     transform: translateY(-10px);
-    /* background: linear-gradient(135deg, #20B2AA, #115483); */
     background: linear-gradient(135deg, #115483, #20B2AA);
-    /* background: #456d79; */
-    /* background: linear-gradient(135deg, #0056b3, #008fb3); */
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.service-card i {
+    font-size: 2.0em;
+    margin-bottom: 5px;
 }
 
 .service-card h3 {
