@@ -19,11 +19,12 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background: #a3c1c9; */
-    background: linear-gradient(135deg, #20B2AA, #115483);
+    background: #fff;
+    /* background: linear-gradient(135deg, #20B2AA, #115483); */
     /* padding: 15px 20px; */
     position: fixed;
     width: 100%;
+    z-index: 3;
 }
 
 .logo img {
@@ -49,11 +50,15 @@ html {
     border-radius: 3px;
     padding: 7px 13px;
     text-transform: uppercase;
+    background: #115483;
 }
 
 .navbar ul li a.active, .navbar ul li a:hover {
-    background: #115483;
+    background: #fff;
+    color: #115483;
     transition: 0.5s;
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 #check {
@@ -73,11 +78,24 @@ html {
 
 /* home section */
 .hero-section {
-    /* background: url('bg-1.jpg') no-repeat center center/cover; */
-    background: linear-gradient(135deg, #20B2AA, #115483);
+    background: url('associate.jpg') no-repeat center center/cover;
+    /* background: linear-gradient(135deg, #20B2AA, #115483); */
     color: #fff;
     text-align: center;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.hero-section .bg-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,6 +128,61 @@ html {
     background: #115483;
     color: #fff;
 }
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 
 
@@ -169,14 +242,40 @@ html {
     padding: 20px 0px;
 }
 
-.service-card {
+/* .service-card {
     background: linear-gradient(135deg, #20B2AA, #115483);
     color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+} */
+.service-card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+    border-radius: 10px;
+}
+
 
 .service-card:hover {
     transform: translateY(-10px);
@@ -197,6 +296,30 @@ html {
 .service-card p {
     font-size: 1em;
     line-height: 1.4;
+}
+
+.service-card:nth-child(1) {
+    background: url('gst.png') no-repeat center/cover;
+}
+
+.service-card:nth-child(2) {
+    background: url('6100987.jpg') no-repeat center/cover;
+}
+
+.service-card:nth-child(3) {
+    background: url('audit.png') no-repeat center/cover;
+}
+
+.service-card:nth-child(4) {
+    background: url('10075609.jpg') no-repeat center/cover;
+}
+
+.service-card:nth-child(5) {
+    background: url('business-license.png') no-repeat center/cover;
+}
+
+.service-card:nth-child(6) {
+    background: url('pricing.png') no-repeat center/cover;
 }
 
 
@@ -429,6 +552,7 @@ form {
 
     .navbar label {
         display: block;
+        color: #134163;
     }
 
     .navbar ul {
@@ -439,8 +563,6 @@ form {
         right: 0;
         /* background: #c4d3d7; */
         background: linear-gradient(153deg, #1f8f89, #134163);
-
-        /* color: #fff; */
         width: 100%;
         text-align: center;
         padding: 15px 0;
