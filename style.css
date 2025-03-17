@@ -79,7 +79,7 @@ html {
 
 /* home section */
 .hero-section {
-    background: url('associate.jpg') no-repeat center center/cover;
+    background: url('assets/associate.jpg') no-repeat center center/cover;
     /* background: linear-gradient(135deg, #20B2AA, #115483); */
     color: #fff;
     text-align: center;
@@ -353,27 +353,27 @@ html {
 }
 
 .service-card:nth-child(1) {
-    background: url('gst.png') no-repeat center/cover;
+    background: url('assets/gst.png') no-repeat center/cover;
 }
 
 .service-card:nth-child(2) {
-    background: url('6100987.jpg') no-repeat center/cover;
+    background: url('assets/6100987.jpg') no-repeat center/cover;
 }
 
 .service-card:nth-child(3) {
-    background: url('audit.png') no-repeat center/cover;
+    background: url('assets/audit.png') no-repeat center/cover;
 }
 
 .service-card:nth-child(4) {
-    background: url('10075609.jpg') no-repeat center/cover;
+    background: url('assets/10075609.jpg') no-repeat center/cover;
 }
 
 .service-card:nth-child(5) {
-    background: url('business-license.png') no-repeat center/cover;
+    background: url('assets/business-license.png') no-repeat center/cover;
 }
 
 .service-card:nth-child(6) {
-    background: url('pricing.png') no-repeat center/cover;
+    background: url('assets/pricing.png') no-repeat center/cover;
 }
 
 
