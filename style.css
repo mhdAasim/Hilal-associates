@@ -29,7 +29,7 @@ html {
 
 .logo img {
     height: 60px;
-    transform: scale(2.5);
+    transform: scale(3);
     padding-left: 30px;
 }
 
@@ -151,7 +151,7 @@ html {
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 60%;
+    width: 50%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -169,13 +169,26 @@ html {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
   }
-  
+
+  .modal-header {
+   padding: 5px;
+   margin-top: 10px;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #115483;
+}
+
   /* The Close Button */
   .close {
-    color: white;
+    color: #115483;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    cursor: pointer;
+    padding-right: 15px;
   }
   
   .close:hover,
@@ -184,6 +197,46 @@ html {
     text-decoration: none;
     cursor: pointer;
   }
+
+.modal-body {
+    padding: 3px;
+}
+
+.consultant-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.consultant-form input,
+.consultant-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.consultant-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.consultant-form button {
+    background-color: #115483;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.consultant-form button:hover {
+    background-color: #0d3a5a;
+}
 
 
 
@@ -427,7 +480,7 @@ html {
     gap: 40px;
 }
 
-form {
+.contact-content form {
     max-width: 630px;
     /* margin: auto; */
     background: white;
@@ -580,6 +633,11 @@ form {
 
 
 @media (max-width: 668px) {
+
+    .modal-content {
+        width: 100%;
+        max-width: 90%;
+    }
 
     /* home section */
     .hero-section h1 {

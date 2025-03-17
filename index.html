@@ -41,15 +41,15 @@
                     of all sizes.</p>
                 <a href="#contact" id="myBtn" class="btn-cta">Get a Free Consultation</a>
             </div>
-            <!-- <div id="myConsultant" class="modal">
+            <div id="myConsultant" class="modal">
                 <div class="modal-content">
                     <div class="modal-header">
                         <span class="close">&times;</span>
-                        <h2>Modal Header</h2>
+                        <h2>Book Apointment</h2>
                     </div>
                     <div class="modal-body">
                     </div>
-                    <form id="coForm" class="contact-form"
+                    <form id="consultantForm" class="consultant-form"
                         action="https://script.google.com/macros/s/AKfycbxVjYHW3xx8qiZl38CVk2-orXgTkNYqlssH7TMFkIymUL1asFYrOlC6OClbYGTJSrvW/exec"
                         method="POST">
                         <input type="text" name="name" placeholder="Your Name" required>
@@ -58,12 +58,8 @@
                         <textarea name="message" placeholder="Your Message" required></textarea>
                         <button type="submit">Send Message</button>
                     </form>
-                       
-                    </div>
-                    <div class="modal-footer">
-                        <h3>Modal Footer</h3>
-                    </div>
-            </div> -->
+                </div>
+            </div>
         </div>
     </section>
 
@@ -210,12 +206,12 @@
         </div>
     </section>
 
-    
+
     <footer class="footer">
         <p>Copyright © 2025 Hilal Associates. All Rights Reserved.</p>
     </footer>
-    
-    
+
+
     <script>
         const faqButtons = document.querySelectorAll('.faq-question');
         faqButtons.forEach(button => {
@@ -225,23 +221,23 @@
                 answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
             });
         });
-    
+
         document.addEventListener('DOMContentLoaded', () => {
             const sections = document.querySelectorAll('section');
             const navLinks = document.querySelectorAll('.navbar ul li a');
-    
+
             function changeActiveLink() {
                 let currentSection = '';
-    
+
                 sections.forEach(section => {
                     const sectionTop = section.offsetTop;
                     const sectionHeight = section.clientHeight;
-    
+
                     if (scrollY >= sectionTop - sectionHeight / 3) {
                         currentSection = section.getAttribute('id');
                     }
                 });
-    
+
                 navLinks.forEach(link => {
                     link.classList.remove('active');
                     if (link.getAttribute('href').includes(currentSection)) {
@@ -249,7 +245,7 @@
                     }
                 });
             }
-    
+
             window.addEventListener('scroll', changeActiveLink);
         });
         // Get the modal
