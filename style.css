@@ -29,7 +29,8 @@ html {
 
 .logo img {
     height: 60px;
-    transform: scale(1.7);
+    transform: scale(2);
+    padding-left: 25px;
 }
 
 .navbar ul {
