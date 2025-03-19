@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hilal Associates
     </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
     <link rel="icon" type="image/x-icon" href="assets/associate-icon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -32,7 +34,7 @@
         </ul>
     </nav>
 
-    <section id="hero" class="hero-section">
+    <!-- <section id="hero" class="hero-section">
         <div class="bg-color">
             <div class="hero-content">
                 <h1>Empowering Businesses with Trusted Financial & Auditing Solutions</h1>
@@ -62,9 +64,98 @@
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <section class="bg-blue-900 h-screen flex items-center text-white">
+        <main class="container mx-auto p-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold leading-tight mb-4">
+                        Empowering Businesses with Trusted Financial &amp; Auditing Solutions
+                    </h1>
+                    <p class="text-base sm:text-lg mb-6">
+                        Since 1991, Hilal Associates has been delivering expert financial and compliance solutions for
+                        businesses of all sizes.
+                    </p>
+                    <a class="bg-yellow-500 text-blue-900 px-6 py-3 rounded font-bold hover:bg-yellow-600" href="#">
+                        Get a Free Consultation
+                    </a>
+                </div>
+                <div class="relative hidden md:block">
+                    <img alt="Illustration of financial and auditing solutions"
+                        class="rounded-lg shadow-lg w-[500px] h-[300px] object-cover"
+                        src="assets/taxs.png" />
+                </div>
+            </div>
+        </main>
     </section>
 
-    <section id="about" class="about-section">
+
+
+    <main id="about" class="container mx-auto about-section px-4 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800">
+                About Us
+            </h2>
+            <div class="w-16 h-1 bg-yellow-500 mx-auto mt-2">
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <img alt="Graph showing financial growth" class="rounded-lg shadow-lg" src="assets/about.png" />
+            </div>
+            <div class="md:w-1/2 md:pl-12">
+                <p class="text-gray-600 mb-6">
+                    Hilal Associates is a premier finance and auditing firm with a legacy of over 30+ years, dedicated
+                    to excellence in customer service. We specialize in providing comprehensive financial services that
+                    drive business success, ensuring regulatory compliance and financial efficiency.
+                </p>
+                <h2 class="text-xl font-bold text-gray-800 mb-4">
+                    Our Core Values
+                </h2>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-yellow-500 text-2xl mr-4">
+                        </i>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800">
+                                Innovation
+                            </h3>
+                            <p class="text-gray-600">
+                                Modern financial solutions tailored to your needs.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-yellow-500 text-2xl mr-4">
+                        </i>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800">
+                                Integrity
+                            </h3>
+                            <p class="text-gray-600">
+                                Transparent, ethical, and reliable services.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-yellow-500 text-2xl mr-4">
+                        </i>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800">
+                                Customer Focus
+                            </h3>
+                            <p class="text-gray-600">
+                                Client success is at the heart of our approach.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- <section id="about" class="about-section">
         <h2><strong>About Hilal Associates</strong></h2>
         <p><strong>Hilal Associates</strong> is a premier finance and auditing firm with a legacy of over 30+ years,
             dedicated to
@@ -77,10 +168,16 @@
         <p><strong>✅ Innovation:</strong> Modern financial solutions tailored to your needs.</p>
         <p><strong>✅ Integrity:</strong> Transparent, ethical, and reliable services.</p>
         <p><strong>✅ Customer Focus:</strong> Client success is at the heart of our approach.</p>
-    </section>
+    </section> -->
 
-    <section id="services" class="services">
-        <h2><strong>Our Services</strong></h2>
+    <section id="services" class="services py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800">
+                Our Services
+            </h2>
+            <div class="w-48 h-1 bg-yellow-500 mx-auto mt-2">
+            </div>
+        </div>
         <p class="service-intro">We provide a wide range of finance and auditing services to support businesses in their
             financial journey</p>
         <div class="service-container">
@@ -118,7 +215,13 @@
     </section>
 
     <section id="why-choose-us" class="why-choose-us">
-        <h3><strong>Why Choose Our Consultancy?</strong></h3>
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800">
+                Why Choose Our Consultancy?
+            </h2>
+            <div class="w-40 sm:w-48 md:w-64 h-1 bg-yellow-500 mx-auto mt-2">
+            </div>
+        </div>
         <p>We take pride in offering exceptional service with a client-first approach:</p>
 
         <p><strong>✔ 30+ Years of Experience:</strong> Trusted by businesses since 1991, delivering proven results.</p>
@@ -131,7 +234,13 @@
     </section>
 
     <section id="faq" class="faq">
-        <h2><strong>Frequently Asked Questions</strong></h2>
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800">
+                Frequently Asked Questions
+            </h2>
+            <div class="w-32 sm:w-48 md:w-80 h-1 bg-yellow-500 mx-auto mt-2">
+            </div>
+        </div>
         <div class="faq-item">
             <button class="faq-question">What is GST and why is it important? <span>+</span></button>
             <div class="faq-answer">
@@ -171,7 +280,13 @@
 
     <section class="contact" id="contact-us">
         <div class="containers">
-            <h2>Contact Us</h2>
+            <div class="text-center mb-4">
+                <h2 class="text-3xl font-bold text-gray-800">
+                    Contact Us
+                </h2>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto mt-2">
+                </div>
+            </div>
             <p>Have questions? Reach out to us anytime!</p>
 
             <div class="contact-content">
