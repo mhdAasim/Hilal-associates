@@ -51,11 +51,11 @@ html {
     border-radius: 3px;
     padding: 7px 13px;
     text-transform: uppercase;
-    background: #115483;
+    background: #1c3c8b;
 }
 
 .navbar ul li a.active, .navbar ul li a:hover {
-    background: #fff;
+    background: #f4b335;
     color: #115483;
     transition: 0.5s;
     /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
