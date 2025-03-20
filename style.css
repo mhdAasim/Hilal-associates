@@ -171,13 +171,13 @@ html {
   }
 
   .modal-header {
-   padding: 5px;
+   padding:0 15px;
    margin-top: 10px;
 }
 
 .modal-header h2 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 28px;
     color: #1c3b8b;
 }
 
@@ -188,7 +188,7 @@ html {
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-    padding-right: 15px;
+    /* padding-right: 15px; */
   }
   
   .close:hover,
