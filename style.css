@@ -29,8 +29,8 @@ html {
 
 .logo img {
     height: 60px;
-    transform: scale(3);
-    padding-left: 30px;
+    transform: scale(3.5);
+    padding-left: 35px;
 }
 
 .navbar ul {
@@ -605,7 +605,7 @@ html {
 }
 
 
-@media (max-width: 750px) {
+@media (max-width: 770px) {
 
     .navbar {
         flex-direction: row;
@@ -633,6 +633,7 @@ html {
         padding: 15px 0;
         height: auto;
         z-index: 10;
+        gap: 15px;
     }
 
     #check:checked ~ ul {
@@ -712,7 +713,7 @@ html {
     /* Why Choose Us */
     #why-choose-us {
         padding: 20px;
-        border-width: 1px;
+        /* border-width: 1px; */
     }
 
     #why-choose-us h3 {
@@ -722,4 +723,12 @@ html {
     #why-choose-us p {
         font-size: 14px;
     }
+
+    /* Contact Us */
+
+.contact {
+    padding: 20px;
+    /* background-color: #f8f9fa; */
+    text-align: center;
+}
 }
