@@ -44,25 +44,7 @@
                     of all sizes.</p>
                 <a href="#contact" id="myBtn" class="btn-cta">Get a Free Consultation</a>
             </div>
-            <div id="myConsultant" class="modal">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <span class="close">&times;</span>
-                        <h2>Book Apointment</h2>
-                    </div>
-                    <div class="modal-body">
-                    </div>
-                    <form id="consultantForm" class="consultant-form"
-                        action="https://script.google.com/macros/s/AKfycbxVjYHW3xx8qiZl38CVk2-orXgTkNYqlssH7TMFkIymUL1asFYrOlC6OClbYGTJSrvW/exec"
-                        method="POST">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <input type="number" name="mobile" placeholder="Mobile number" required>
-                        <textarea name="message" placeholder="Your Message" required></textarea>
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
-            </div>
+           
         </div>
     </section> -->
 
@@ -77,9 +59,28 @@
                         Since 1991, Hilal Associates has been delivering expert financial and compliance solutions for
                         businesses of all sizes.
                     </p>
-                    <a class="bg-yellow-500 text-blue-900 px-6 py-3 rounded font-bold hover:bg-yellow-600" href="#">
+                    <a id="myBtn" class="bg-yellow-500 text-blue-900 px-6 py-3 rounded font-bold hover:bg-yellow-600" href="#">
                         Get a Free Consultation
                     </a>
+                    <div id="myConsultant" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2>Book Apointment</h2>
+                            </div>
+                            <div class="modal-body">
+                            </div>
+                            <form id="consultantForm" class="consultant-form"
+                                action="https://script.google.com/macros/s/AKfycbxVjYHW3xx8qiZl38CVk2-orXgTkNYqlssH7TMFkIymUL1asFYrOlC6OClbYGTJSrvW/exec"
+                                method="POST">
+                                <input type="text" name="name" placeholder="Your Name" required>
+                                <input type="email" name="email" placeholder="Your Email" required>
+                                <input type="number" name="mobile" placeholder="Mobile number" required>
+                                <textarea name="message" placeholder="Your Message" required></textarea>
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
                 <div class="relative hidden md:flex justify-end">
                     <img alt="Illustration of financial and auditing solutions"
@@ -390,7 +391,6 @@
                 modal.style.display = "none";
             }
         }
-
 
     </script>
 </body>
